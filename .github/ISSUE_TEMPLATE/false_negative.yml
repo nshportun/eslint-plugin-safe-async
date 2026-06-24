@@ -1,0 +1,47 @@
+name: False Negative
+description: Report a rule missing invalid code
+labels: [false-negative]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A false negative is when a rule fails to catch code that should be flagged.
+
+  - type: dropdown
+    id: rule_name
+    attributes:
+      label: Which rule?
+      options:
+        - no-floating-async-calls
+        - no-await-in-loop-when-batchable
+        - no-empty-catch-in-async
+        - require-await-inside-try
+        - prefer-abortsignal-in-fetch-like-apis
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What bug should be caught?
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Code example
+      description: Paste the code that should be flagged but is not
+      render: javascript
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin version
+      placeholder: "0.1.0"
+    validations:
+      required: true

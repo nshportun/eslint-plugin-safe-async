@@ -1,0 +1,53 @@
+name: Rule Proposal
+description: Suggest a new rule for the plugin
+labels: [enhancement]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a new rule that catches an async/await bug.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What bug or pattern should this rule catch?
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Code examples
+      description: |
+        Show bad code and good code:
+
+        ❌ Bad
+        ✅ Good
+      render: javascript
+    validations:
+      required: true
+
+  - type: textarea
+    id: prior_art
+    attributes:
+      label: Prior art
+      description: Do similar rules exist in other plugins? Where?
+
+  - type: textarea
+    id: false_positives
+    attributes:
+      label: False positive risks
+      description: When might this rule incorrectly flag valid code?
+
+  - type: dropdown
+    id: autofix
+    attributes:
+      label: Can this rule have an autofix?
+      options:
+        - "No — suggestion only"
+        - "Yes — safe to autofix"
+        - "Maybe — context-dependent"
+    validations:
+      required: true

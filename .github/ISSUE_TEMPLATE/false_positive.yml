@@ -1,0 +1,47 @@
+name: False Positive
+description: Report a rule incorrectly flagging valid code
+labels: [false-positive]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A false positive is when a rule flags code that should be valid.
+
+  - type: dropdown
+    id: rule_name
+    attributes:
+      label: Which rule?
+      options:
+        - no-floating-async-calls
+        - no-await-in-loop-when-batchable
+        - no-empty-catch-in-async
+        - require-await-inside-try
+        - prefer-abortsignal-in-fetch-like-apis
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Why is this code valid?
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Code example
+      description: Paste the code that is incorrectly flagged
+      render: javascript
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin version
+      placeholder: "0.1.0"
+    validations:
+      required: true

@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a bug in eslint-plugin-safe-async
+labels: [bug]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please provide as much detail as possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is the bug?
+      placeholder: Describe the issue clearly
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: How can we reproduce the bug?
+      placeholder: |
+        1. Create a file with...
+        2. Configure ESLint with...
+        3. Run eslint
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Code example
+      description: Paste the code that triggers the bug
+      render: javascript
+
+  - type: input
+    id: eslint_version
+    attributes:
+      label: ESLint version
+      placeholder: "9.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: eslint-plugin-safe-async version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: node_version
+    attributes:
+      label: Node.js version
+      placeholder: "22.0.0"
+    validations:
+      required: true
