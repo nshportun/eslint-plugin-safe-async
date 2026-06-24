@@ -6,9 +6,21 @@ Only the latest major version receives security updates.
 
 ## Reporting a vulnerability
 
-**Do not** open a public GitHub issue for security vulnerabilities.
+**Do not open a public GitHub issue for security vulnerabilities.**
 
-Instead, email security concerns to the project maintainer or use GitHub's private security advisory feature.
+Report privately using GitHub's security advisory system:
+
+👉 [Open a private security advisory](https://github.com/nshportun/eslint-plugin-safe-async/security/advisories/new)
+
+If you are unable to use GitHub advisories, describe the issue in detail
+and send it to the maintainer via GitHub direct message.
+
+Include:
+- Description of the vulnerability
+- Steps to reproduce
+- Affected versions
+- Impact assessment
+- Suggested mitigation if known
 
 ## Security standards
 
