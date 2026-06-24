@@ -1,7 +1,7 @@
 # eslint-plugin-safe-async
 
 [![CI](https://github.com/nshportun/eslint-plugin-safe-async/actions/workflows/ci.yml/badge.svg)](https://github.com/nshportun/eslint-plugin-safe-async/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/eslint-plugin-safe-async)](https://www.npmjs.com/package/eslint-plugin-safe-async)
+[![npm version](https://img.shields.io/npm/v/@nshportun/eslint-plugin-safe-async)](https://www.npmjs.com/package/@nshportun/eslint-plugin-safe-async)
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 Focused ESLint rules for catching real async/await bugs before they hit production.
@@ -11,14 +11,14 @@ Focused ESLint rules for catching real async/await bugs before they hit producti
 ### Install
 
 ```bash
-npm install --save-dev eslint-plugin-safe-async
+npm install --save-dev @nshportun/eslint-plugin-safe-async
 ```
 
 ### Flat config
 
 ```js
 // eslint.config.js
-import safeAsync from 'eslint-plugin-safe-async';
+import safeAsync from '@nshportun/eslint-plugin-safe-async';
 
 export default [
   {
@@ -37,7 +37,7 @@ export default [
 
 ```js
 // eslint.config.js
-import safeAsync from 'eslint-plugin-safe-async';
+import safeAsync from '@nshportun/eslint-plugin-safe-async';
 
 export default [safeAsync.configs.recommended];
 ```
@@ -46,7 +46,7 @@ export default [safeAsync.configs.recommended];
 
 ```ts
 // eslint.config.js
-import safeAsync from 'eslint-plugin-safe-async';
+import safeAsync from '@nshportun/eslint-plugin-safe-async';
 import tsParser from '@typescript-eslint/parser';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
 
