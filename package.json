@@ -1,14 +1,14 @@
 {
-  "name": "@nshportun/eslint-plugin-safe-async",
+  "name": "eslint-plugin-safe-async",
   "version": "0.1.0",
   "description": "ESLint rules for safer async/await code in JavaScript and TypeScript.",
   "license": "MIT",
   "author": "nshportun",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nshportun/eslint-plugin-safe-async.git"
+    "url": "https://github.com/nshportun/eslint-plugin-safe-async.git"
   },
-  "homepage": "https://www.npmjs.com/package/eslint-plugin-safe-async",
+  "homepage": "https://github.com/nshportun/eslint-plugin-safe-async#readme",
   "bugs": {
     "url": "https://github.com/nshportun/eslint-plugin-safe-async/issues"
   },
