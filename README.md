@@ -1,7 +1,7 @@
 # eslint-plugin-safe-async
 
 [![CI](https://github.com/nshportun/eslint-plugin-safe-async/actions/workflows/ci.yml/badge.svg)](https://github.com/nshportun/eslint-plugin-safe-async/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@nshportun/eslint-plugin-safe-async)](https://www.npmjs.com/package/@nshportun/eslint-plugin-safe-async)
+[![npm version](https://img.shields.io/npm/v/%40nshportun%2Feslint-plugin-safe-async)](https://www.npmjs.com/package/@nshportun/eslint-plugin-safe-async)
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 Focused ESLint rules for catching real async/await bugs before they hit production.
