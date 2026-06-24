@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-safe-async",
+  "name": "@nshportun/eslint-plugin-safe-async",
   "version": "0.1.0",
   "description": "ESLint rules for safer async/await code in JavaScript and TypeScript.",
   "license": "MIT",
