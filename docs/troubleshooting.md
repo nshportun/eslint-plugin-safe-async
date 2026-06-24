@@ -9,7 +9,7 @@
 1. Verify ESLint is using flat config (check for `eslint.config.js`/`eslint.config.mjs` in your project root)
 2. Ensure the plugin is imported and configured in your flat config:
    ```js
-   import safeAsync from 'eslint-plugin-safe-async';
+   import safeAsync from '@nshportun/eslint-plugin-safe-async';
    export default [
      {
        plugins: { 'safe-async': safeAsync },
@@ -58,7 +58,7 @@ See each rule's documentation for available options.
 ```js
 import tsParser from '@typescript-eslint/parser';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
-import safeAsync from 'eslint-plugin-safe-async';
+import safeAsync from '@nshportun/eslint-plugin-safe-async';
 
 export default [
   {

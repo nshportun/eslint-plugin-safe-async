@@ -6,7 +6,7 @@ If you're using `eslint-plugin-promise`, here's how to migrate:
 
 ### Rules mapping
 
-| `eslint-plugin-promise` | `eslint-plugin-safe-async` | Notes |
+| `eslint-plugin-promise` | `@nshportun/eslint-plugin-safe-async` | Notes |
 |---|---|---|
 | `no-floating-promises` | `no-floating-async-calls` | Similar, but narrower scope and fewer false positives |
 | `no-nesting-promise` | — | Out of scope; use single async functions instead |
@@ -17,7 +17,7 @@ If you're using `eslint-plugin-promise`, here's how to migrate:
 
 1. **Install `safe-async` and remove `promise`:**
    ```bash
-   npm install --save-dev eslint-plugin-safe-async
+   npm install --save-dev @nshportun/eslint-plugin-safe-async
    npm uninstall eslint-plugin-promise
    ```
 
@@ -35,7 +35,7 @@ If you're using `eslint-plugin-promise`, here's how to migrate:
    ];
 
    // After
-   import safeAsync from 'eslint-plugin-safe-async';
+   import safeAsync from '@nshportun/eslint-plugin-safe-async';
    export default [
      {
        plugins: { 'safe-async': safeAsync },
@@ -54,8 +54,8 @@ If you're using `eslint-plugin-promise`, here's how to migrate:
 
 If you've been using general linting plugins with async rules, adopt `safe-async` for better signal-to-noise:
 
-1. Install: `npm install --save-dev eslint-plugin-safe-async`
-2. Use the `recommended` config: `import safeAsync from 'eslint-plugin-safe-async'; export default [safeAsync.configs.recommended];`
+1. Install: `npm install --save-dev @nshportun/eslint-plugin-safe-async`
+2. Use the `recommended` config: `import safeAsync from '@nshportun/eslint-plugin-safe-async'; export default [safeAsync.configs.recommended];`
 3. Gradually enable stricter rules if needed
 
 ## Philosophy difference

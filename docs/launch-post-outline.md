@@ -38,7 +38,7 @@
 
 ### Installation and quick start
 ```bash
-npm install --save-dev eslint-plugin-safe-async
+npm install --save-dev @nshportun/eslint-plugin-safe-async
 ```
 
 Show flat config example (2-3 lines)

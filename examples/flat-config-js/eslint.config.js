@@ -1,4 +1,4 @@
-import safeAsync from 'eslint-plugin-safe-async';
+import safeAsync from '@nshportun/eslint-plugin-safe-async';
 
 export default [
   {

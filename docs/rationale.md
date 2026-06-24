@@ -2,7 +2,7 @@
 
 ## Philosophy
 
-`eslint-plugin-safe-async` exists to catch real bugs—not style preferences. Every rule must:
+`@nshportun/eslint-plugin-safe-async` exists to catch real bugs—not style preferences. Every rule must:
 
 1. **Detect a genuine defect** in async code that can cause production incidents
 2. **Have a low false-positive rate** to earn trust in CI pipelines
