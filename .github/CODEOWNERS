@@ -1,0 +1,20 @@
+# Default: all files require maintainer review
+*  @nshportun
+
+# Rules — highest sensitivity, false positive risk
+/src/rules/  @nshportun
+
+# Configs — affects all recommended/strict users
+/src/configs/  @nshportun
+
+# CI and release — supply chain critical
+/.github/workflows/  @nshportun
+
+# Package metadata
+/package.json  @nshportun
+/package-lock.json  @nshportun
+
+# Security and legal
+/SECURITY.md  @nshportun
+/LICENSE  @nshportun
+/DISCLAIMER.md  @nshportun
